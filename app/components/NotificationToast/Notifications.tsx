@@ -47,6 +47,7 @@ const novuConfig = {
   applicationIdentifier:
     process.env.NEXT_PUBLIC_NOVU_APPLICATION_IDENTIFIER || "",
   subscriberId: process.env.NEXT_PUBLIC_NOVU_SUBSCRIBER_ID || "",
+  backendUrl: process.env.NEXT_PUBLIC_NOVU_API_URL || "",
   appearance: {
     elements: {
       bellContainer: {
