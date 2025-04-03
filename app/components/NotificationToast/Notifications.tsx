@@ -10,6 +10,8 @@ const NotificationToast = () => {
     subscriberId: process.env.NEXT_PUBLIC_NOVU_SUBSCRIBER_ID || "",
     applicationIdentifier:
       process.env.NEXT_PUBLIC_NOVU_APPLICATION_IDENTIFIER || "",
+    backendUrl: process.env.NEXT_PUBLIC_NOVU_API_URL || "",
+    socketUrl: process.env.NEXT_PUBLIC_NOVU_SOCKET_URL || "",
   });
 
   const [showToast, setShowToast] = useState(false);
@@ -48,6 +50,7 @@ const novuConfig = {
     process.env.NEXT_PUBLIC_NOVU_APPLICATION_IDENTIFIER || "",
   subscriberId: process.env.NEXT_PUBLIC_NOVU_SUBSCRIBER_ID || "",
   backendUrl: process.env.NEXT_PUBLIC_NOVU_API_URL || "",
+  socketUrl: process.env.NEXT_PUBLIC_NOVU_SOCKET_URL || "",
   appearance: {
     elements: {
       bellContainer: {
